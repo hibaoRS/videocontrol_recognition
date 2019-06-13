@@ -7,14 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="tornadofx-empty-project" />
-        <module name="tornadofx-empty-maven-project" />
         <module name="video_recognition" />
+        <module name="tornadofx-empty-maven-project" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="tornadofx-empty-maven-project" target="1.5" />
-      <module name="tornadofx-empty-project" target="1.5" />
-      <module name="video_recognition" target="1.5" />
+      <module name="video_recognition" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

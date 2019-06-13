@@ -13,7 +13,6 @@ import kotlin.math.absoluteValue
 
 class DrawRectangle(stroke: Paint = Color.RED) : Rectangle() {
 
-    private external fun test2()
 
     private var rectStartX = 0.0
     private var rectStartY = 0.0

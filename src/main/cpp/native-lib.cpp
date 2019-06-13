@@ -1,15 +1,15 @@
 //
 // Created by 10324 on 2019/6/13.
 //
+
 #include "native-lib.h"
 
 
-
-void Java_com_xqdd_view_DrawRectangle_test2(JNIEnv *, jobject) {
-
+JNIEXPORT jstring JNICALL Java_com_xqdd_view_MainView_from_1cpp1(JNIEnv *env, jobject) {
+    return env->NewStringUTF("Wow!!!");
 }
 
 
-jdouble Java_com_xqdd_view_DrawRectangle_foo(JNIEnv *, jobject, jint) {
-    return 0;
+JNIEXPORT jstring JNICALL Java_com_xqdd_view_MainView_from_1cpp2(JNIEnv *env, jobject) {
+    return env->NewStringUTF("You've got it!!!");
 }

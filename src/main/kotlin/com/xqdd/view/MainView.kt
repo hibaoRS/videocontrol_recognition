@@ -1,5 +1,6 @@
 package com.xqdd.view
 
+import javafx.scene.control.Alert
 import javafx.scene.control.Slider
 import javafx.scene.control.ToggleButton
 import javafx.scene.control.ToggleGroup
@@ -13,12 +14,14 @@ import kotlin.math.absoluteValue
 
 class MainView : View("video test") {
 
-    private external fun test()
 
     private var slider: Slider? = null
     private var isSeek = false
     private val width = 960.0
     private val height = 540.0
+
+    private external fun from_cpp1(): String?
+    private external fun from_cpp2(): String?
 
     companion object {
         var currButton: ToggleButton? = null
@@ -120,6 +123,19 @@ class MainView : View("video test") {
             togglebutton("rect1", toggleGroup, false)
             togglebutton("rect2", toggleGroup, false)
             togglebutton("rect3", toggleGroup, false)
+
+
+
+            button("test") {
+                action {
+                    alert(Alert.AlertType.INFORMATION, from_cpp1() ?: "")
+                }
+            }
+            button("what") {
+                action {
+                    alert(Alert.AlertType.INFORMATION, from_cpp2() ?: "")
+                }
+            }
         }
 
     }
