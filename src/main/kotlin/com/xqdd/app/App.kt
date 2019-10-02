@@ -8,6 +8,16 @@ class App : App(MainView::class) {
     companion object {
         init {
             NativeLoader.loadLibrary("native-lib")
+            System.getProperties().forEach {
+                println(it.key.toString() + ": " + it.value)
+                println()
+            }
+
+        }
+
+        @JvmStatic
+        fun main(args: Array<String>) {
+            launch(com.xqdd.app.App::class.java)
         }
     }
 

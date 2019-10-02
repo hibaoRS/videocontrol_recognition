@@ -8,21 +8,23 @@
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Raspberry Pi x64" CONFIG_NAME="Release" TOOLCHAIN_NAME="Raspberry Pi x64" />
-      <configuration PROFILE_NAME="windows x86" CONFIG_NAME="Release" TOOLCHAIN_NAME="Visual Studio x86" />
-      <configuration PROFILE_NAME="windows x64" CONFIG_NAME="Release" TOOLCHAIN_NAME="Visual Studio x64" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60d5f0f3-6acb-417d-a7b6-3effd2e529f7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../javah_helper.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../../../javah_helper.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../kotlin/com/xqdd/app/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../kotlin/com/xqdd/app/App.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kotlin/com/xqdd/view/MainView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../kotlin/com/xqdd/view/MainView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../video_recognition.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../video_recognition.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/natives/linux_arm64/libnative-lib.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/natives/windows_32/native-lib.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/natives/windows_32/native-lib.dll.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/natives/windows_32/native-lib.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/natives/windows_32/native-lib.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/natives/windows_64/native-lib.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/natives/windows_64/native-lib.dll.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/natives/windows_64/native-lib.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/natives/windows_64/native-lib.lib" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -66,7 +68,17 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Raspberry Pi x64" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -93,6 +105,8 @@
       <find>cc1</find>
       <find>java_home</find>
       <find>EQUAL</find>
+      <find>CMAKE_MODULE_PATH</find>
+      <find>FIND_PACKAGE_HANDLE_STANDARD_ARGS</find>
     </findStrings>
     <dirStrings>
       <dir>F:\code\Java\javafx\tornadofx\video_recognition\src\main\cpp\cmake-build-release</dir>
@@ -111,17 +125,17 @@
         <option value="$PROJECT_DIR$/native-lib.h" />
         <option value="$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc/LocalState/rootfs/home/ubuntu1804/tools/cmake/cmake-3.14.5-Linux-x86_64/share/cmake-3.14/Modules/FindPackageHandleStandardArgs.cmake" />
         <option value="$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc/LocalState/rootfs/home/ubuntu1804/tools/cmake/cmake-3.14.5-Linux-x86_64/share/cmake-3.14/Modules/FindJNI.cmake" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/native-lib.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1940" />
-    <option name="height" value="1050" />
+    <option name="x" value="-1929" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -138,6 +152,11 @@
               <item name="native-lib" type="b2602c69:ProjectViewProjectNode" />
               <item name="cpp" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="native-lib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -152,7 +171,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -176,7 +195,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="native-lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="native-lib" TARGET_NAME="native-lib" CONFIG_NAME="windows x86">
+    <configuration name="native-lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="native-lib" TARGET_NAME="native-lib" CONFIG_NAME="Raspberry Pi x64">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -201,11 +220,18 @@
       <workItem from="1560563418587" duration="19653000" />
       <workItem from="1560600069944" duration="2072000" />
       <workItem from="1560602527190" duration="945000" />
+      <workItem from="1560781720940" duration="788000" />
+      <workItem from="1560793654733" duration="514000" />
+      <workItem from="1560794332593" duration="1381000" />
+      <workItem from="1560822114842" duration="1601000" />
+      <workItem from="1560839809947" duration="1202000" />
+      <workItem from="1560876535028" duration="45000" />
+      <workItem from="1562059006539" duration="298000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45853000" />
+    <option name="totallyTimeSpent" value="51682000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -217,9 +243,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-1927" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19168901" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21045576" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -230,11 +257,11 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.407932" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.4674221" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.27478755" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.296034" />
-      <window_info anchor="bottom" id="CMake" order="12" weight="0.48725212" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.5091938" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -287,13 +314,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc/LocalState/rootfs/home/ubuntu1804/tools/cmake/cmake-3.14.5-Linux-x86_64/share/cmake-3.14/Modules/CMakeDetermineCCompiler.cmake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="192" column="15" selection-start-line="192" selection-start-column="15" selection-end-line="192" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc/LocalState/rootfs/home/ubuntu1804/tools/cmake/cmake-3.14.5-Linux-x86_64/share/cmake-3.14/Modules/CMakeDetermineCCompiler.cmake" />
     <entry file="file://$PROJECT_DIR$/cmake/TargetArch.cmake">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -301,33 +322,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc/LocalState/rootfs/home/ubuntu1804/tools/cmake/cmake-3.14.5-Linux-x86_64/share/cmake-3.14/Modules/FindPackageHandleStandardArgs.cmake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="147" column="43" lean-forward="true" selection-start-line="147" selection-start-column="43" selection-end-line="147" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc/LocalState/rootfs/home/ubuntu1804/tools/cmake/cmake-3.14.5-Linux-x86_64/share/cmake-3.14/Modules/FindPackageHandleStandardArgs.cmake" />
     <entry file="file://$PROJECT_DIR$/cmake-build-raspberry-pi-x86/arch.c" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-windows-x86/CMakeCache.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2160" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc/LocalState/rootfs/home/ubuntu1804/tools/cmake/cmake-3.14.5-Linux-x86_64/share/cmake-3.14/Modules/CMakeDetermineSystem.cmake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="187" selection-start-line="187" selection-end-line="187" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc/LocalState/rootfs/home/ubuntu1804/tools/cmake/cmake-3.14.5-Linux-x86_64/share/cmake-3.14/Modules/FindJNI.cmake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-windows-x86/CMakeCache.txt" />
+    <entry file="file://$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc/LocalState/rootfs/home/ubuntu1804/tools/cmake/cmake-3.14.5-Linux-x86_64/share/cmake-3.14/Modules/CMakeDetermineSystem.cmake" />
+    <entry file="file://$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc/LocalState/rootfs/home/ubuntu1804/tools/cmake/cmake-3.14.5-Linux-x86_64/share/cmake-3.14/Modules/FindJNI.cmake" />
     <entry file="file://$PROJECT_DIR$/native-lib.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-304">
@@ -342,10 +341,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cmake/WinImage-KeyGen.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1694">
+          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc/LocalState/rootfs/home/ubuntu1804/tools/cmake/cmake-3.14.5-Linux-x86_64/share/cmake-3.14/Modules/CMakeDetermineCXXCompiler.cmake" />
+    <entry file="file://$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc/LocalState/rootfs/home/ubuntu1804/tools/cmake/cmake-3.14.5-Linux-x86_64/share/cmake-3.14/Modules/CMakeTestCXXCompiler.cmake" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        <state relative-caret-position="192">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
         </state>
       </provider>
     </entry>
